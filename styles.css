@@ -1,0 +1,366 @@
+html {
+  font-size: 0.625rem; /* 10px equivalent thanks to default of 16px */
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  color: #414141;
+  font-family: Karla, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 4rem 4rem 4rem;
+}
+
+a {
+  border-bottom: .2rem solid transparent;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s ease all;
+}
+
+a:hover {
+  transition: 0 ease all;
+  border-bottom-color: inherit;
+}
+
+
+/* form fields */
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #e5e5e5;
+  /*border-radius: .2rem;*/
+  padding: 1.35rem;
+  /*box-shadow:         inset 0 1px 2px -1px #666;*/
+}
+button, input[type="button"], input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 1.35rem 1.3rem;
+  cursor: pointer;
+  transition: .3s ease all;
+  color: #000;
+  background: #fff;
+  border: 2px solid #000;
+}
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+  color: #fff;
+  background: #000;
+  border-color: #000;
+}
+button:active, input[type="button"]:active, input[type="submit"]:active {
+  color: #fff;
+  background: #000;
+  transform: translateY(2px);
+  transition: 0s ease all;
+}
+button:disabled, input[type="button"]:disabled, input[type="submit"]:disabled {
+  color: #bbb;
+  background: #f0f0f0;
+}
+button:focus, input:focus {
+  outline: none;
+  border-color: pink;
+  z-index: 100;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+hr {
+  margin: 4rem 0;
+  border: none;
+  border-top: .4rem solid #f1f1f1;
+  background: none;
+  height: 0;
+}
+
+
+
+
+.btn-link {
+  display: inline-block;
+  padding: .8rem;
+  /* color: #2328ff; */
+  color: #0697ff;
+  background: #fff;
+  border: .2rem solid;
+}
+.btn-link:hover  {
+  background: #f7f7ff;
+}
+.btn-link:active  {
+  color: #000;
+  background: #f5f5f5;
+}
+.btn-link:not([href]) {
+  background: transparent;
+  border-color: transparent;
+  color: #9c9b9b;
+}
+
+
+
+
+.btn-super {
+  border-width: .3rem;
+  display: block;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1.6rem auto 1.6rem auto;
+  padding: 2.5rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transition: .3s linear all;
+}
+.btn-super:hover {
+  /*transform: translate(.4rem, -.3rem);*/
+  position: relative;
+  left: .4rem;
+  top: -.3rem;
+  transition: .05s linear all;
+  /*z-index: 1000;*/
+}
+.btn-super:active {
+  top: .5rem;
+  transition: 0 linear all;
+}
+
+/* http://dabblet.com/gist/3464101 */
+.btn-super:before {
+  transition: .3s linear all;
+  content: '';
+	position: absolute;
+	z-index: -1;
+  top: 2.3rem;
+  right: .5rem;
+	width: 101.5%;
+	height: 100%;
+
+  /*background-size: 1em 1em;*/
+  background-color: transparent;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent,
+    transparent 1rem,
+    #0697ff 1rem,
+    #0697ff 2rem
+  );
+}
+
+
+.btn-super:hover:before {
+  transition: .1s linear all;
+  top: 2.6rem;
+  right: .9rem;
+  transition: .05s linear all;
+  	/*width: 105%;
+  	height: 130%;*/
+  /*background-size: .75em .75em;*/
+}
+
+.btn-super:active::before {
+  transition: 0 linear all;
+  top: 1.8rem;
+}
+
+.fill-header {
+}
+
+    .heading-fill {
+      background: #954ce3;
+      padding: 4rem 0;
+    }
+
+        .ib-title {
+          font-size: 4.8rem;
+          color: #fff;
+          /* text-align: center; */
+          line-height: 1;
+          margin: 0;
+          max-width: 60rem;
+          margin: 0 auto;
+          padding: 0 4rem;
+        }
+            .wrap-invisible {
+              font-size: 0;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              line-height: 0;
+              overflow: hidden;
+            }
+
+            .flower {
+              opacity: .5;
+            }
+
+
+    .ib-description {
+      color: #954ce3;
+      max-width: 60rem;
+      margin: 4rem auto;
+      padding: 0 4rem;
+    }
+
+
+
+
+.ib-header {
+  margin: 4rem auto 0 auto;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+.ib-emblem {
+  /* background: #fbf0f8; */
+  /* color: #9f81b3; */
+  color: #954ce3;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  /* letter-spacing: .35rem; */
+  padding: 0rem;
+  /* text-transform: uppercase; */
+}
+
+
+
+.links-collection {
+  text-align: center;
+  /*margin: 0 auto;*/
+  /*max-width: 60rem;*/
+  padding: 1rem 0;
+  /*width: 80%;*/
+}
+
+.links-collection .btn-super {
+  /* margin-bottom: 3rem; */
+  margin: 1.5rem auto 6rem auto;
+}
+
+.link-description {
+  font-weight: 300;
+  max-width: 35rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+@media only screen and (min-width: 550px) {
+  
+  
+  .ib-title {
+    font-size: 7rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .ib-description {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 330px) {
+  
+  body {
+    font-size: 1.6rem;
+  }
+
+  .ib-title {
+    font-size: 3.8rem;
+  }
+
+  .ib-description {
+  }
+
+  .btn-super {
+    font-size: 2.4rem;
+  }
+
+
+}
+
+
+
+
+
+
+/*.links-collection {
+  margin: 3.2rem 0;
+}
+
+.links-collection .btn-link {
+  float: left;
+  width: 20rem;
+  text-align: center;
+}
+
+.links-collection .link-description {
+  padding-top: .95rem;
+  padding-left: 2rem;
+  margin-left: 22rem;
+  max-width: 400px;
+  position: relative;
+}
+
+.links-collection .link-description::before {
+  content: ':: ';
+  display: block;
+  position: absolute;
+  left: 0;
+}*/
+
+
+/*
+@media only screen and (max-width: 500px) {
+  .links-collection .btn-link {
+    float: none;
+    width: 100%;
+  }
+
+  .links-collection .link-description {
+    margin: 1em 0;
+  }
+
+  .links-collection .link-description::before {
+    content: '⬆️'
+  }
+}
+*/
+
+
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
