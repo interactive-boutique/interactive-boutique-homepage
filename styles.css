@@ -350,54 +350,11 @@ hr {
 
 
 
-
-
-
-/*.links-collection {
-  margin: 3.2rem 0;
-}
-
-.links-collection .btn-link {
-  float: left;
-  width: 20rem;
-  text-align: center;
-}
-
-.links-collection .link-description {
-  padding-top: .95rem;
-  padding-left: 2rem;
-  margin-left: 22rem;
-  max-width: 400px;
-  position: relative;
-}
-
-.links-collection .link-description::before {
-  content: ':: ';
-  display: block;
-  position: absolute;
-  left: 0;
-}*/
-
-
 /*
-@media only screen and (max-width: 500px) {
-  .links-collection .btn-link {
-    float: none;
-    width: 100%;
-  }
 
-  .links-collection .link-description {
-    margin: 1em 0;
-  }
+  Utilities
 
-  .links-collection .link-description::before {
-    content: '⬆️'
-  }
-}
 */
-
-
-
 
 .group:after {
   content: "";
