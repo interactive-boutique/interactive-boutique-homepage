@@ -17,7 +17,7 @@ body {
 main {
   margin: 0 auto;
   max-width: 60rem;
-  padding: 0 4rem 4rem 4rem;
+  padding: 4rem 4rem 4rem 4rem;
 }
 
 a {
@@ -192,7 +192,7 @@ hr {
           /* color: #fff; */
           /* text-align: center; */
           line-height: 1;
-          margin: 4rem 0;
+          margin: 0 0 4rem 0;
           max-width: 60rem;
           /* margin: 0 auto; */
           /* padding: 0 4rem; */
@@ -207,9 +207,46 @@ hr {
             }
 
             .flower {
-              opacity: .5;
-              color: hsl(118, 100%, 69%);
+              /* opacity: .5;
+              color: hsl(118, 100%, 69%); */
               /* display: none; */
+              /* background: -webkit-linear-gradient(#eee, #333); */
+              /* height: 200px; */
+              /* font-size: 10rem; */
+              /* margin-right: 4rem; */
+              /* line-height: 0; */
+              /* display: inline-block; */
+              /* display: block; */
+              /* position: relative; */
+              bottom: -.18em;
+              background: linear-gradient(90deg,#414141, #414141, #414141, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+              background-size: 1800% 1800%;              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              -webkit-animation: rainbow 12s linear infinite;
+              -z-animation: rainbow 12s linear infinite;
+              -o-animation: rainbow 12s linear infinite;
+                 animation: rainbow 12s linear infinite;
+            }
+
+            @-webkit-keyframes rainbow {
+              0%{background-position:0% 82%}
+              50%{background-position:100% 19%}
+              100%{background-position:0% 82%}
+            }
+            @-moz-keyframes rainbow {
+                0%{background-position:0% 82%}
+                50%{background-position:100% 19%}
+                100%{background-position:0% 82%}
+            }
+            @-o-keyframes rainbow {
+                0%{background-position:0% 82%}
+                50%{background-position:100% 19%}
+                100%{background-position:0% 82%}
+            }
+            @keyframes rainbow { 
+                0%{background-position:0% 82%}
+                50%{background-position:100% 19%}
+                100%{background-position:0% 82%}
             }
 
 
@@ -267,9 +304,13 @@ hr {
 @media only screen and (min-width: 550px) {
   
   
+  main {
+    margin-top: 7rem;
+  }
+  
   .ib-title {
     font-size: 7rem;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
     margin-bottom: 7rem;
   }
 
