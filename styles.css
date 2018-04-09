@@ -86,7 +86,7 @@ h2 {
 }
 
 hr {
-  margin: 4rem 0;
+  margin: 5.6rem 0;
   border: none;
   border-top: .4rem solid #f1f1f1;
   background: none;
@@ -99,8 +99,8 @@ hr {
 .btn-link {
   display: inline-block;
   padding: .8rem;
-  /* color: #2328ff; */
-  color: #0697ff;
+  color: #2328ff;
+  /* color: #0697ff; */
   background: #fff;
   border: .2rem solid;
 }
@@ -125,7 +125,7 @@ hr {
   display: block;
   font-size: 3rem;
   font-weight: 600;
-  margin: 1.6rem auto 1.6rem auto;
+  margin: 1.8rem auto 1.8rem auto;
   padding: 2.5rem;
   position: relative;
   top: 0;
@@ -163,8 +163,8 @@ hr {
     135deg,
     transparent,
     transparent 1rem,
-    #0697ff 1rem,
-    #0697ff 2rem
+    #2328ff 1rem,
+    #2328ff 2rem
   );
 }
 
@@ -184,23 +184,18 @@ hr {
   top: 1.8rem;
 }
 
-.fill-header {
+.ib-header {
 }
-
-    .heading-fill {
-      background: #954ce3;
-      padding: 4rem 0;
-    }
 
         .ib-title {
           font-size: 4.8rem;
-          color: #fff;
+          /* color: #fff; */
           /* text-align: center; */
           line-height: 1;
-          margin: 0;
+          margin: 4rem 0;
           max-width: 60rem;
-          margin: 0 auto;
-          padding: 0 4rem;
+          /* margin: 0 auto; */
+          /* padding: 0 4rem; */
         }
             .wrap-invisible {
               font-size: 0;
@@ -213,29 +208,28 @@ hr {
 
             .flower {
               opacity: .5;
+              color: hsl(118, 100%, 69%);
+              /* display: none; */
             }
 
 
     .ib-description {
-      color: #954ce3;
       max-width: 60rem;
-      margin: 4rem auto;
-      padding: 0 4rem;
     }
 
 
 
 
-.ib-header {
+/* .ib-header {
   margin: 4rem auto 0 auto;
   margin: 0 auto;
   max-width: 60rem;
-}
+} */
 
 .ib-emblem {
   /* background: #fbf0f8; */
   /* color: #9f81b3; */
-  color: #954ce3;
+  /* color: #954ce3; */
   display: inline-block;
   font-size: 3rem;
   font-weight: bold;
@@ -257,7 +251,7 @@ hr {
 
 .links-collection .btn-super {
   /* margin-bottom: 3rem; */
-  margin: 1.5rem auto 6rem auto;
+  margin: 2rem auto 4rem auto;
 }
 
 .link-description {
@@ -282,6 +276,11 @@ hr {
   .ib-description {
     margin-top: 6rem;
     font-size: 2.4rem;
+  }
+
+  .links-collection .btn-super {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
   }
 
 
